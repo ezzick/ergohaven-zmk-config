@@ -168,7 +168,7 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&trans  &kp RU_NUMERO  &en AT       &en HASH      &en DOLLAR   &en SQT                    &kp CARET  &kp AMPERSAND  &none      &none     &none        &trans
+&trans  &kp RU_NUMERO  &en AT       &en HASH      &en DOLLAR   &en SQT                    &en CARET  &kp AMPERSAND  &none      &none     &none        &trans
 &trans  &none          &kp RU_BSLH  &kp RU_ASTRK  &kp RU_FSLH  &none                      &none      &en LBRC       &none      &en RBRC  &none        &none
 &trans  &none          &kp LPAR     &kp PLUS      &kp RPAR     &none                      &none      &en LBKT       &none      &en RBKT  &kp RU_SEMI  &en GRAVE
 &trans  &none          &en LT       &kp EQUAL     &en GT       &none    &none     &none   &none      &none          &en TILDE  &none     &none        &trans
