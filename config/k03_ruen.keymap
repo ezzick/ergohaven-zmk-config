@@ -19,6 +19,24 @@
             #binding-cells = <0>;
             bindings = <&kp RU_CYRILLIC_SOFT_SIGN>, <&kp RU_CYRILLIC_HARD_SIGN>;
         };
+
+        en_space: en_space {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EN_SPACE";
+            bindings = <&kp SPACE>, <&layer_en>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RCTL)>;
+        };
+
+        ru_space: ru_space {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RU_SPACE";
+            bindings = <&kp SPACE>, <&layer_ru>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RCTL)>;
+        };
     };
 
     combos {
@@ -26,23 +44,11 @@
 
         cmben {
             bindings = <&layer_en>;
-            key-positions = <54 57>;
-            layers = <1>;
-        };
-
-        cmbru {
-            bindings = <&layer_ru>;
-            key-positions = <54 57>;
-            layers = <0>;
-        };
-
-        main_layer_en {
-            bindings = <&layer_en>;
             key-positions = <15 16>;
             layers = <1>;
         };
 
-        main_layer_ru {
+        cmbru {
             bindings = <&layer_ru>;
             key-positions = <15 16>;
             layers = <0>;
@@ -114,7 +120,7 @@
 &kp TAB       &kp Q     &kp W         &kp E     &kp R              &kp T                              &kp Y      &kp U      &kp I      &kp O         &kp P      &none
 &kp CAPSLOCK  &kp A     &kp S         &kp D     &kp F              &kp G                              &kp H      &kp J      &kp K      &kp L         &kp SEMI   &kp SQT
 &kp LSHFT     &kp Z     &kp X         &kp C     &kp V              &kp B      &none        &none      &kp N      &kp M      &kp COMMA  &kp DOT       &none      &kp RSHFT
-                        &kp LGUI      &kp LALT  &kp LCTRL          &mo 2      &kp SPACE    &kp ENTER  &mo 3      &kp RCTRL  &kp LALT   &kp RGUI
+                        &kp LGUI      &kp LALT  &kp LCTRL          &mo 2      &ru_space    &kp ENTER  &mo 3      &kp RCTRL  &kp LALT   &kp RGUI
             >;
 
             display-name = "Base";
@@ -134,7 +140,7 @@
 &kp TAB       &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA    &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE  &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
 &kp CAPSLOCK  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A     &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O    &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LSHFT     &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM    &kp RU_CYRILLIC_I   &none        &none      &kp RU_CYRILLIC_TE  &td_ss_hs            &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_IO   &kp RSHFT
-                                       &kp LGUI              &kp LALT            &kp LCTRL             &mo 2               &kp SPACE    &kp ENTER  &mo 4               &kp RCTRL            &kp LALT             &kp RGUI
+                                       &kp LGUI              &kp LALT            &kp LCTRL             &mo 2               &en_space    &kp ENTER  &mo 4               &kp RCTRL            &kp LALT             &kp RGUI
             >;
 
             sensor-bindings =
