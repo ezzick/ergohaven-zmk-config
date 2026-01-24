@@ -13,13 +13,6 @@
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
 
-        td_e_io: td_e_io {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_E_IO";
-            #binding-cells = <0>;
-            bindings = <&kp RU_CYRILLIC_IE>, <&kp RU_CYRILLIC_IO>;
-        };
-
         td_ss_hs: td_ss_hs {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SS_HS";
@@ -33,11 +26,23 @@
 
         cmben {
             bindings = <&layer_en>;
-            key-positions = <15 16>;
+            key-positions = <54 57>;
             layers = <1>;
         };
 
         cmbru {
+            bindings = <&layer_ru>;
+            key-positions = <54 57>;
+            layers = <0>;
+        };
+
+        main_layer_en {
+            bindings = <&layer_en>;
+            key-positions = <15 16>;
+            layers = <1>;
+        };
+
+        main_layer_ru {
             bindings = <&layer_ru>;
             key-positions = <15 16>;
             layers = <0>;
