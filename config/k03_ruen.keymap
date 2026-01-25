@@ -95,7 +95,7 @@
         lg_tog: lg_tog {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(SPACE) &tog 1>;
+            bindings = <&kp LG(SPACE) &tog 1>;
             label = "LG_TOG";
         };
     };
