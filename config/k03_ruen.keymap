@@ -47,29 +47,29 @@
     };
 
     macros {
-        to_ru_win: to_ru {
+        to_ru_win: to_ru_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LC(N2))>;
-            label = "TO_RU";
+            label = "TO_RU_WIN";
             wait-ms = <0>;
             tap-ms = <30>;
         };
 
-        to_en_win: to_en {
+        to_en_win: to_en_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(N1))>;
-            label = "TO_EN";
+            label = "TO_EN_WIN";
             wait-ms = <0>;
             tap-ms = <30>;
         };
 
-        layer_en_win: layer_en {
+        layer_en_win: layer_en_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 0 &to_en_win>;
-            label = "LAYER_EN";
+            label = "LAYER_EN_WIN";
             wait-ms = <0>;
             tap-ms = <30>;
         };
@@ -83,7 +83,7 @@
             wait-ms = <0>;
         };
 
-        en_win: en {
+        en_win: en_win {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -96,16 +96,16 @@
                 <&macro_tap>,
                 <&to_ru_win>;
 
-            label = "EN";
+            label = "EN_WIN";
             wait-ms = <0>;
             tap-ms = <30>;
         };
 
-        lg_tog_samsung: lg_tog {
+        lg_tog_samsung: lg_tog_samsung {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(SPACE) &tog 5>;
-            label = "LG_TOG";
+            label = "LG_TOG_SAMSUNG";
         };
 
         layer_en_samsung: layer_en_samsung {
@@ -153,32 +153,32 @@
             tap-ms = <30>;
         };
 
-        layer_number_0: layer_number_5 {
+        layer_number_0: layer_number_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp L &kp A &kp Y &kp E &kp R &kp UNDER &kp N &kp U &kp M &kp B &kp E &kp R &kp UNDER &kp N0>;
-            label = "LAYER_NUMBER_5";
+            label = "LAYER_NUMBER_0";
         };
 
-        layer_number_1: layer_number_6 {
+        layer_number_1: layer_number_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp L &kp A &kp Y &kp E &kp R &kp UNDER &kp N &kp U &kp M &kp B &kp E &kp R &kp UNDER &kp N1>;
-            label = "LAYER_NUMBER_6";
+            label = "LAYER_NUMBER_1";
         };
 
-        layer_number_2: layer_number_7 {
+        layer_number_2: layer_number_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp L &kp A &kp Y &kp E &kp R &kp UNDER &kp N &kp U &kp M &kp B &kp E &kp R &kp UNDER &kp N2>;
-            label = "LAYER_NUMBER_7";
+            label = "LAYER_NUMBER_2";
         };
 
-        layer_number_3: layer_number_0 {
+        layer_number_3: layer_number_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp L &kp A &kp Y &kp E &kp R &kp UNDER &kp N &kp U &kp M &kp B &kp E &kp R &kp UNDER &kp N3>;
-            label = "LAYER_NUMBER_0";
+            label = "LAYER_NUMBER_3";
         };
 
         layer_number_4: layer_number_4 {
