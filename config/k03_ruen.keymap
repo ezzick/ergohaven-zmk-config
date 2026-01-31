@@ -156,70 +156,70 @@
         layer_number_0: layer_number_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp A &kp Y &kp E &kp R &kp UNDER &kp N &kp U &kp M &kp B &kp E &kp R &kp UNDER &kp N0>;
+            bindings = <&kp E &kp N &kp UNDER &kp W &kp I &kp N>;
             label = "LAYER_NUMBER_0";
         };
 
         layer_number_1: layer_number_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp A &kp Y &kp E &kp R &kp UNDER &kp N &kp U &kp M &kp B &kp E &kp R &kp UNDER &kp N1>;
+            bindings = <&kp R &kp U &kp UNDER &kp W &kp I &kp N>;
             label = "LAYER_NUMBER_1";
         };
 
         layer_number_2: layer_number_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp A &kp Y &kp E &kp R &kp UNDER &kp N &kp U &kp M &kp B &kp E &kp R &kp UNDER &kp N2>;
+            bindings = <&kp S &kp Y &kp M &kp UNDER &kp E &kp N &kp UNDER &kp W &kp I &kp N>;
             label = "LAYER_NUMBER_2";
         };
 
         layer_number_3: layer_number_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp A &kp Y &kp E &kp R &kp UNDER &kp N &kp U &kp M &kp B &kp E &kp R &kp UNDER &kp N3>;
+            bindings = <&kp S &kp Y &kp M &kp UNDER &kp R &kp U &kp UNDER &kp W &kp I &kp N>;
             label = "LAYER_NUMBER_3";
         };
 
         layer_number_4: layer_number_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp A &kp Y &kp E &kp R &kp UNDER &kp N &kp U &kp M &kp B &kp E &kp R &kp UNDER &kp N4>;
+            bindings = <&kp E &kp N &kp UNDER &kp S &kp A &kp M &kp S &kp U &kp N &kp G>;
             label = "LAYER_NUMBER_4";
         };
 
         layer_number_5: layer_number_5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp A &kp Y &kp E &kp R &kp UNDER &kp N &kp U &kp M &kp B &kp E &kp R &kp UNDER &kp N5>;
+            bindings = <&kp R &kp U &kp UNDER &kp S &kp A &kp M &kp S &kp U &kp N &kp G>;
             label = "LAYER_NUMBER_5";
         };
 
         layer_number_6: layer_number_6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp A &kp Y &kp E &kp R &kp UNDER &kp N &kp U &kp M &kp B &kp E &kp R &kp UNDER &kp N6>;
+            bindings = <&kp S &kp Y &kp M &kp UNDER &kp E &kp N &kp UNDER &kp S &kp A &kp M &kp S &kp U &kp N &kp G>;
             label = "LAYER_NUMBER_6";
         };
 
         layer_number_7: layer_number_7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp A &kp Y &kp E &kp R &kp UNDER &kp N &kp U &kp M &kp B &kp E &kp R &kp UNDER &kp N7>;
+            bindings = <&kp S &kp Y &kp M &kp UNDER &kp R &kp U &kp UNDER &kp S &kp A &kp M &kp S &kp U &kp N &kp G>;
             label = "LAYER_NUMBER_7";
         };
 
         layer_number_8: layer_number_8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp A &kp Y &kp E &kp R &kp UNDER &kp N &kp U &kp M &kp B &kp E &kp R &kp UNDER &kp N8>;
+            bindings = <&kp N &kp A &kp V>;
             label = "LAYER_NUMBER_8";
         };
 
         layer_number_9: layer_number_9 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp A &kp Y &kp E &kp R &kp UNDER &kp N &kp U &kp M &kp B &kp E &kp R &kp UNDER &kp N9>;
+            bindings = <&kp A &kp D &kp J>;
             label = "LAYER_NUMBER_9";
         };
     };
