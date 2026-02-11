@@ -258,7 +258,7 @@
         keys_F2_CtrlC: keys_F2_CtrlC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F2 &kp LC(C)>;
+            bindings = <&kp F2 &kp LC(C) &kp ENTER>;
             label = "KEYS_F2_CTRLC";
         };
     };
